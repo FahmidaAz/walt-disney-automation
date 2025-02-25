@@ -41,5 +41,17 @@ public class WaltDisneyHomepageSteps {
 		WaltDisneyHomepagePageActionsObj.locateAulaniLink();
 	}
 	
-
+	//Adventure trips
+	@When("^I access the \"([^\"]*)\" page from the same menu and click$")
+	public void i_access_the_page_from_the_same_menu_and_click(String arg1) throws Throwable {
+		WaltDisneyHomepagePageActionsObj.locateParkAndTravelLink();
+		WaltDisneyHomepagePageActionsObj.locateAdventuresLink();
+	}
+	//vacation club
+	
+	@When("^I access the \"([^\"]*)\" page from the park and travel menu and click$")
+	public void i_access_the_page_from_the_park_and_travel_menu_and_click(String arg1) throws Throwable {
+		WaltDisneyHomepagePageActionsObj.locateParkAndTravelLink();
+		WaltDisneyHomepagePageActionsObj.locateVacationClub();
+	}
 }

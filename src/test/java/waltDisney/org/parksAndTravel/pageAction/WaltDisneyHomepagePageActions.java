@@ -35,4 +35,12 @@ public class WaltDisneyHomepagePageActions {
 		WaltDisneyHomepagePageLocatorsObj.aulaniLink.click();
 	}
 	
+	//disney adventures
+	public void locateAdventuresLink(){
+		WaltDisneyHomepagePageLocatorsObj.adventuresLink.click();
+	}
+	//vacation club
+	public void locateVacationClub(){
+		WaltDisneyHomepagePageLocatorsObj.vacationClubLink.click();
+	}
 }

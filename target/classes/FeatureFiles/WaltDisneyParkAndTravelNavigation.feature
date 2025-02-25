@@ -22,3 +22,15 @@ Feature: Enhanced Navigation for Parks & Travel
     When I access the "Aulani - A Disney Resort and Spa" page from the same menu
     Then I confirm the destination’s images, offers, and descriptions are accurate
     
+    Scenario: Validate Adventures by Disney Navigation
+    Given I open the Disney.com homepage
+    When I access the "Adventures by Disney" page from the same menu and click
+    Then I confirm the destination’s images, trips, and plan a trip are accurate
+    
+    Scenario: Validate Disney Vacation Club Navigation
+    Given I open the Disney.com homepage
+    When I access the "Disney Vacation Club" page from the park and travel menu and click
+    Then I confirm the Explore membership, offer and benefits are accurate
+    
+    
+    

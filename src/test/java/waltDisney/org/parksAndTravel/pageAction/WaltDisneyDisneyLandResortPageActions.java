@@ -1,5 +1,6 @@
 package waltDisney.org.parksAndTravel.pageAction;
 
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import waltDisney.org.parksAndTravel.pageElements.WaltDisneyDisneyLandResortPageLocators;
@@ -14,5 +15,18 @@ public class WaltDisneyDisneyLandResortPageActions {
 	}
 	  public void verifyDisneyLandResortPage(){
 		  WaltDisneyDisneyLandResortPageLocatorsObj.verifyDisneyLandResortPage.isDisplayed();
+	  }
+	  //Tickets and parks link
+	  public void loadThePageDisneyWorld(){
+		  SetupDrivers.driver.get("https://disneyworld.disney.go.com/"); 
+	  }
+	  public void mousehoverTicketAndParks(){
+		  Actions action = new Actions(SetupDrivers.driver);
+		  action.moveToElement( WaltDisneyDisneyLandResortPageLocatorsObj.ticketTab).perform();
+	  }
+	  public void checkAllLinks(){
+		  WaltDisneyDisneyLandResortPageLocatorsObj.ticketPass.isDisplayed();
+		  WaltDisneyDisneyLandResortPageLocatorsObj.planVisit.isDisplayed();
+		  WaltDisneyDisneyLandResortPageLocatorsObj.exploreParks.isDisplayed();
 	  }
 }

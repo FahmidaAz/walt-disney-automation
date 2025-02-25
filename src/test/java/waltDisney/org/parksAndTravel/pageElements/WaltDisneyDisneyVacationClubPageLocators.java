@@ -1,5 +1,9 @@
 package waltDisney.org.parksAndTravel.pageElements;
 
-public class WaltDisneyDisneyVacationClubPageLocators {
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
+public class WaltDisneyDisneyVacationClubPageLocators {
+     @FindBy(xpath="//img[@alt='Disney Vacation Club Logo']")
+     public WebElement vacationClubLogo;
 }

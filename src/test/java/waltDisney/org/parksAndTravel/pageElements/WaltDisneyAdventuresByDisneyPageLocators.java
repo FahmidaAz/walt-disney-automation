@@ -1,5 +1,10 @@
 package waltDisney.org.parksAndTravel.pageElements;
 
-public class WaltDisneyAdventuresByDisneyPageLocators {
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
+public class WaltDisneyAdventuresByDisneyPageLocators {
+     
+	@FindBy(xpath="//img[@alt='Adventures by Disney']")
+	public WebElement adventureLogo;
 }
